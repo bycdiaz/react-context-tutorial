@@ -22,7 +22,7 @@ export function MovieProvider(props) {
   ]);
 
   return (
-    <MovieContext.Provider value={movies}>
+    <MovieContext.Provider value={[movies, setMovies]}>
       {props.children}
     </MovieContext.Provider>
   )
